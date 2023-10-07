@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/e23bb62adc.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: serif;
+            all: unset;
+            background-color: #003D3A;
+            
+        }
+        .header {
+            background-color: #f1f1f1;
+            padding: 25px;
+            justify-content: space-between;
+            
+            display: flex;
+        }
+        
+        #btn1 {
+            font-size: 15px;
+            outline: none;
+            border: 0;
+        }
+        #btn1:hover {
+        border-radius: 10px;
+            color: #f1f1f1;
+        transition: .5s;
+        cursor: pointer;
+        background-color: #003D3A;
+        padding: 15px;
+        
+        }
+        #btn1:not(:hover) {
+            transition: .5s;
+            padding: 0px;
+        }
+       .auto {
+        margin-left: 660px;
+        margin-top: 560px;
+       }
+       #middle {
+        position: absolute;
+        transition: .5s;
+        border-radius: 10px;
+        font-size: 17px;
+        padding: 15px 25px;
+        top: 330px;
+        border: 0;
+        outline: 0;
+        border: 1px solid  #ffc776;
+        background-color: transparent;
+        color:  #ffc776;
+       }
+       #middle:hover {
+        cursor: pointer;
+        color: #003D3A;
+        background-color:  #ffc776;
+       }
+       #middle2 {
+        position: absolute;
+        left: 640px;
+        top: 380px;
+        color: #FFFFFF;
+       }
+       .texts {
+        margin-left: 620px;
+        margin-top: 70px;
+       }
+       .texts h1{
+        font-size: 40px;
+        position: relative;
+        color: #f1f1f1;
+        
+       }
+       .based {
+        color: #FFFFFF;
+       }
+       #target {
+        margin-top: 770px;
+       }
+       .brogramming {
+        color: #fff;
+        margin-left: 670px;
+       }
+       .languages h3 {
+        color: #fff;
+       }
+       .languages {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+       }
+       #img1 {
+        left: 166px;
+        top: 1150px;
+        position: absolute;
+        max-width: 100px;
+       }
+       #img2 {
+        left: 480px;
+        top: 1150px;
+        position: absolute;
+        max-width: 100px;
+       }
+       #py{
+        top: 1100px;
+        left: 190px;
+        position: absolute;
+        right: 20px;
+       }
+       #js{
+        top: 1100px;
+        left: 490px;
+        position: absolute;
+        right: 20px;
+       }
+       #c{
+        top: 1100px;
+        left: 820px;
+        position: absolute;
+        right: 20px;
+       }
+       #img3 {
+        left: 780px;
+        top: 1150px;
+        position: absolute;
+        max-width: 100px;
+       }
+
+       #csharp{
+        top: 1100px;
+        left: 1120px;
+        position: absolute;
+        right: 20px;
+       }
+       #img4 {
+        left: 1080px;
+        top: 1145px;
+        position: absolute;
+        max-width: 100px;
+       }
+
+       #cplus{
+        top: 1100px;
+        left: 1370px;
+        position: absolute;
+        right: 20px;
+       }
+       #img5 {
+        left: 1330px;
+        top: 1145px;
+        position: absolute;
+        max-width: 100px;
+       }
+       .btn2 {
+        transition: .5s;
+        padding: 15px 25px;
+        border-radius: 10px;
+        color: #fff;
+        background-color: transparent;
+        border: 1px solid #fff;
+        top: 1300px;
+        left: 700px;
+        position: absolute;
+       }
+       .btn2:hover {
+        cursor: pointer;
+        background-color: #fff;
+        color: #111;
+       }
+       #must {
+        color: grey;
+        letter-spacing: 1rem;
+        position: absolute;
+        top: 1035px;
+        left: 360px;
+       }
+       .agent1 {
+        border-radius: 10px;
+        left: 100px;
+        top: 1645px;
+        position: absolute;
+        max-width: 350px;
+        border: 1px solid #fff;
+        padding-bottom: 140px;
+       }
+       #agent1 {
+        left: 125px;
+        letter-spacing: 0.7rem;
+        top: 1600px;
+        position: absolute;
+        color: #fff;
+       }
+       #content2 {
+        color: grey;
+        letter-spacing: 1rem;
+        position: absolute;
+        top: 1500px;
+        left: 360px;
+       }
+       .brogramming2 {
+        position: absolute;
+        top: 1450px;
+        left: 700px;
+        color: #fff;
+       }
+       #info {
+        border-bottom: 1px solid grey;
+        position: absolute;
+        top: 1830px;
+        left: 110px;
+        font-size: 19px;
+        color: gray;
+        
+       }
+       #info2 {
+        position: absolute;
+        top: 1855px;
+        left: 110px;
+        font-size: 19px;
+        color: grey;
+        border-bottom: 1px solid grey;
+       }
+       #info3 {
+        position: absolute;
+        top: 1880px;
+        left: 110px;
+        font-size: 19px;
+        color: grey;
+        border-bottom: 1px solid grey;
+       }
+       #info4 {
+        position: absolute;
+        top: 1905px;
+        left: 110px;
+        font-size: 19px;
+        color: grey;
+        border-bottom: 1px solid grey;
+       }
+       .agent2 {
+ 
+        border-radius: 10px;
+        left: 600px;
+        top: 1645px;
+        position: absolute;
+        max-width: 350px;
+        border: 1px solid #fff;
+        padding-bottom: 140px;
+       
+       }
+       #agent2 {
+        left: 670px;
+        letter-spacing: 0.7rem;
+        top: 1600px;
+        position: absolute;
+        color: #fff;
+       }
+       #info5{
+        border-bottom: 1px solid grey;
+        position: absolute;
+        top: 1830px;
+        left: 610px;
+        font-size: 19px;
+        color: grey;
+       }
+       #info6 {
+        position: absolute;
+        top: 1855px;
+        left: 610px;
+        font-size: 19px;
+        color: grey;
+        border-bottom: 1px solid grey;
+       }
+       #info7{
+        position: absolute;
+        top: 1880px;
+        left: 610px;
+        font-size: 19px;
+        color: grey;
+        border-bottom: 1px solid grey;
+       }
+       #info8{
+        position: absolute;
+        top: 1905px;
+        left: 610px;
+        font-size: 19px;
+        color: grey;
+        border-bottom: 1px solid grey;
+       }
+       .agent3 {
+ 
+ border-radius: 10px;
+ left: 1110px;
+ top: 1645px;
+ position: absolute;
+ max-width: 350px;
+ border: 1px solid #fff;
+ padding-bottom: 140px;
+
+}
+#info9 {
+    border-bottom: 1px solid grey;
+        position: absolute;
+        top: 1830px;
+        left: 1120px;
+        font-size: 19px;
+        color: grey;
+}
+
+#info10 {
+        position: absolute;
+        top: 1855px;
+        left: 1120px;
+        font-size: 19px;
+        color: grey;
+        border-bottom: 1px solid grey;
+       }
+       #info11 {
+        
+        position: absolute;
+        top: 1880px;
+        left: 1120px;
+        font-size: 19px;
+        color: grey;
+        border-bottom: 1px solid grey;
+       }
+       #info12 {
+        position: absolute;
+        top: 1905px;
+        left: 1120px;
+        font-size: 19px;
+        color: grey;
+        border-bottom: 1px solid grey;
+       }
+       #agent3 {
+        left: 1140px;
+        letter-spacing: 0.7rem;
+        top: 1600px;
+        position: absolute;
+        color: #fff;
+       }
+       .agentPhotos {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 230px;
+       }
+       .contact {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 430px;
+       }
+       .summary {
+        
+        background-color: transparent;
+        border: 1px solid #fff;
+        position: absolute;
+        left: 480px;
+        border-radius: 10px;
+        padding: 200px;
+        position: absolute;
+        top: 2450px;
+        
+       }
+       .brogramming3 {
+        position: absolute;
+        top: 2300px;
+        left: 710px;
+        color: #fff;
+       }
+       input{
+        width: 100%;
+            padding: 14px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+       }
+       label {
+        border-radius: 10px;
+        color: #fff;
+            display: block;
+            margin-bottom: 8px;
+        }
+        #content4 {
+        color: grey;
+        letter-spacing: 1rem;
+        position: absolute;
+        top: 2350px;
+        left: 360px;
+       }
+       #exp {
+        color: #fff;
+        position: absolute;
+        top: 0;
+       }
+       #buttn {
+        position: absolute;
+        top: 3000px;
+       margin-left: 300px;
+       transition: .5s;
+        padding: 20px 25px;
+        background-color: transparent;
+        border: 1px solid #fff;
+        color: #fff;
+        outline: 0;
+        border-radius: 10px;
+       }
+       #buttn:hover {
+        cursor: pointer;
+        background-color: #fff;
+        color: #000;
+       }
+       .brogramming4 {
+        position: absolute;
+        left: 650px;
+        top: 540px;
+        color: #fff;
+       } 
+       #must3 {
+        color: gray;
+        position: absolute;
+        left: 590px;
+        top: 590px;
+       }
+       
+       .imgGD {
+        max-width: 250px;
+        position: absolute;
+        top: 670px;
+        left: 640px;
+        border-radius: 10px;
+       }
+       #activeUsers {
+        position: absolute;
+        left: 1260px;
+        color: #fff;
+       }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <button id="btn1" onclick="scrollContact()">Contact</button>
+        <button  id="btn1"onclick="ScrollClients()">Our Clients</button>
+        <button  id="btn1">Membership</button>
+        <button  id="btn1" onclick="programmingFunction()">Available Jobs</button>
+        
+    </div>
+    <p id="activeUsers">Users In This Web active online: <span id="userCount">0</span></p>
+    <div class="texts">
+        <h1>Find The Best Jobs</h1>
+        <p class="based">At Us You Can Find The Best Job That Suits You</p>
+    </div>
+    <div class="auto">
+        <button id="middle" onclick="scrl()">Apply To Job Now</button>
+        <p id="middle2">You Can Always Use This Website Freely</p>
+
+</div>
+<div class="graphicDesigb">
+    <h1 id="targe3" class="brogramming4">Graphic Design</h1>
+    <p id="must3">You Must Know Graphic Design Atleat On Intermediate Level</p>
+    <div class="summary2">
+        <img src="GD.png" class="imgGD">
+    </div>
+<div class="programming">
+    <h1 id="target" class="brogramming">Programming</h1>
+    <p id="must">You Must Know All Of These Languages</p>
+    <div class="languages">
+        <h3 id="py">Python</h3>
+    <img id="img1" src="Python.png">
+
+    <h3 id="js">Javascript</h3>
+    <img id="img2" src="javascr.png">
+
+    <h3 id="c">C</h3>
+    <img id="img3" src="c.png">
+
+    <h3 id="csharp">C#</h3>
+    <img id="img4" src="csharp.png">
+
+    <h3 id="cplus">C++</h3>
+    <img id="img5" src="cplus.png">
+</div>
+</div>
+<button class="btn2" onclick="applyProgramming()" id="pApply">Apply For Programming</button>
+
+</div>
+<div class="Clients">
+    <h1 id="target2" class="brogramming2">Elite Clients</h1>
+    <p id="content2">See Our Agents Who Are Working For Us</p>
+    <div class="agentPhotos">
+        <h3 id="agent1">Michael Sterling</h3>
+        <img class="agent1" src="john1.png">
+        <p id="info">Age: 28</p>
+        <p id="info2">Experience: 9Year</p>
+        <p id="info3">Current Work Place: Working For Us</p>
+        <p id="info4">Proudly Serving Us For: 7 Years</p>
+    </div>
+    <div class="agentPhotos2">
+        <h3 id="agent2">Malia Hale</h3>
+        <img class="agent2" src="john2.png">
+        <p id="info5">Age: 24</p>
+        <p id="info6">Experience: 5Year</p>
+        <p id="info7">Current Work Place: Working For Us</p>
+        <p id="info8">Proudly Serving Us For: 2 Years</p>
+    </div>
+    <div class="agentPhotos3">
+        <h3 id="agent3">Derek Stilinski</h3>
+        <img class="agent3" src="john3.png">
+        <p id="info9">Age: 24</p>
+        <p id="info10">Experience: 5Year</p>
+        <p id="info11">Current Work Place: Working For Us</p>
+        <p id="info12">Proudly Serving Us For: 2 Years</p>
+    </div>
+</div>
+
+<div class="contact">
+    <h1 id="target3" class="brogramming3">Contact Us</h1>
+    <p id="content4">Contact Us To Get The Best Experience</p>
+    <div class="summary">
+        <h2 id="exp">Get The Best Experience</h2>
+    <label>Username</label>
+    <input type="text" placeholder="Type Your Username">
+    <label>Surname</label>
+    <input type="text" placeholder="Type Your Surname">
+    <label>For What Job Are You Looking For</label>
+    <input placeholder="Your Job" type="text">
+</div>
+<button id="buttn">Submit</button>
+</div>
+<script>
+    function programmingFunction(){
+  let target = document.getElementById("target");
+  target.scrollIntoView({behavior: 'smooth', block: 'start'})
+  
+}
+
+function applyProgramming() {
+  let pApply = document.getElementById("pApply");
+  pApply.textContent = "Applying..";
+  setTimeout(function()  {
+    pApply.textContent = "Job Applied Succesfully!";
+  }, 5000);
+}
+
+function ScrollClients() {
+  let target2 = document.getElementById("target2");
+  target2.scrollIntoView({behavior: 'smooth', block: 'start'})
+}
+
+function scrollContact() {
+  let target3 = document.getElementById("target3");
+  target3.scrollIntoView({behavior: 'smooth', block: 'start'})
+}
+function scrl() {
+   let mid = document.getElementById("middle");
+   mid.textContent ="Generating..";
+   setTimeout(function()  {
+    mid.textContent = "Scroll Down Below!";
+   }, 4000);
+}
+function updateActiveUsers() {
+      
+      const randomUsers = Math.floor(Math.random() * (5999 - 4000 + 1)) + 4000;
+      document.getElementById('userCount').textContent = randomUsers;
+    }
+
+
+    setInterval(updateActiveUsers, 2000);
+
+    updateActiveUsers();
+</script>
+</body>
+</html>
